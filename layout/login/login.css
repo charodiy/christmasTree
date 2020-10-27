@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --btn-color-a90b20: #A90B20;
+    --text-color-393312: #393312;
+}
+
+.login-container {
+    background: url("../images/login_background.png") no-repeat center;
+    height: 100vh;
+    padding: 70px 200px;
+    box-sizing: border-box;
+}
+
+.login-heading {
+    text-align: left;
+    font: normal normal bold 72px/96px Arial;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    transform: translate(0, 50%);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 12px #00000029;
+    border-radius: 15px;
+    padding: 30px 50px;
+    width: 470px;
+    height: 280px;
+    opacity: 1;
+    box-sizing: border-box;
+    transition-duration: 300ms;
+}
+
+.login-label {
+    font: normal 20px Arial;
+    color: var(--text-color-393312);
+    letter-spacing: 1px;
+}
+
+.login-input {
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid var(--text-color-393312);
+    outline: none;
+    font: normal 20px Arial;
+    color: var(--text-color-393312);
+    letter-spacing: 1px;
+    margin-top: 35px;
+}
+
+.login-submit {
+    border: solid 1px transparent;
+    background-color: var(--btn-color-a90b20);
+    color: #FFFFFF;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 35px;
+    width: 240px;
+    font: normal 19px Arial;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 6px 6px 6px #00000029;
+    transition-duration: 400ms;
+    outline: none;
+}
+
+.login-submit:hover {
+    transform: scale(1.01);
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 600px) {
+    .login-container {
+        min-height: 700px;
+        padding: 45px 25px;
+    }
+
+    .login-box {
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px;
+        width: 98%;
+        height: 240px;
+    }
+
+    .login-label {
+        letter-spacing: 0.5px;
+    }
+
+    .login-input {
+        text-align: center;
+        margin: 0;
+    }
+
+    .login-submit {
+        width: 230px;
+        font: normal 17px Arial;
+        letter-spacing: 0.5px;
+        height: 50px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1440px){
+    .login-container {
+        padding: 60px 100px;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px){
+    .login-container {
+        padding: 60px 200px;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .login-container {
+        padding: 70px 200px;
+    }
+}
