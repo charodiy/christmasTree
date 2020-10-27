@@ -107,20 +107,39 @@
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1440px){
+@media screen and (min-width: 601px) and (max-width: 1440px) {
     .login-container {
         padding: 60px 100px;
     }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1920px){
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
     .login-container {
         padding: 60px 200px;
     }
 }
 
-@media screen and (min-width: 1921px) {
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
     .login-container {
         padding: 70px 200px;
+    }
+}
+
+@media screen and (min-width: 2561px) {
+    .login-container {
+        background: url("../images/login_background_big.png") no-repeat center;
+        height: 100vh;
+        padding: 110px 240px;
+        box-sizing: border-box;
+    }
+
+    .login-heading {
+        font: normal normal bold 74px/98px Arial;
+    }
+
+    .login-box {
+        padding: 35px 55px;
+        width: 490px;
+        height: 300px;
     }
 }
