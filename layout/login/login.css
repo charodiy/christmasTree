@@ -75,6 +75,10 @@
     opacity: 0.9;
 }
 
+.login-submit:active {
+    opacity: 0.5;
+}
+
 @media screen and (max-width: 600px) {
     .login-container {
         min-height: 700px;
